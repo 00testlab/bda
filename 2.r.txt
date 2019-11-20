@@ -1,0 +1,21 @@
+# Create the vector of strings 
+x<-c("Control", "Control", "Control", "Ear Removal", "Ear Removal", "Ear Removal", "Ear Removal", "Fake Ear Removal", "Fake Ear Removal", "Fake Ear Removal", "Fake Ear Removal") 
+# display the vector > x [1] "Control" "Control" "Control" "Ear Removal" [5] "Ear Removal" "Ear Removal" "Ear Removal" "Fake Ear Removal" [9] "Fake Ear Removal" "Fake Ear Removal" "Fake Ear Removal" 
+#construct factor from the vector > xfact<- factor(x) 
+#Display the vector > xfact 
+[1] Control Control Control Ear Removal 
+[5] Ear Removal Ear Removal Ear Removal Fake Ear Removal 
+[9] Fake Ear Removal Fake Ear Removal Fake Ear Removal 
+Levels: Control Ear Removal Fake Ear Removal 
+> nlevels(xfact) 
+[1] 3
+
+#----------------
+#2b.
+#Create the vector > x<-c(rep("a",25),rep("b",15),rep("c",58)) 
+> x
+[1] "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" "a" [21] "a" "a" "a" "a" "a" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" "b" [41] "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" [61] "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" [81] "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" "c" 
+> length(x) # Find the length of the vector [1] 98 
+> table1<- data.frame(x) 
+# Construct table from the vector 
+> table1
